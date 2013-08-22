@@ -60,96 +60,96 @@
 </IfModule>
 
 <IfModule mod_expires.c>
-	ExpiresActive On
+  ExpiresActive On
 
-	ExpiresByType application/x-shockwave-flash     "access plus 1 year"
-	ExpiresByType image/bmp                         "access plus 1 year"
-	ExpiresByType image/gif                         "access plus 1 year"
-	ExpiresByType image/jpeg                        "access plus 1 year"
-	ExpiresByType image/png                         "access plus 1 year"
-	ExpiresByType image/svg+xml                     "access plus 1 year"
-	ExpiresByType image/tiff                        "access plus 1 year"
-	ExpiresByType image/vnd.microsoft.icon          "access plus 1 year"
-	ExpiresByType image/x-icon                      "access plus 1 year"
-	ExpiresByType text/css                          "access plus 1 year"
-	ExpiresByType video/x-flv                       "access plus 1 year"
-	ExpiresByType application/vnd.bw-fontobject     "access plus 1 year"
-	ExpiresByType application/x-font-ttf            "access plus 1 year"
-	ExpiresByType application/font-woff             "access plus 1 year"
-	ExpiresByType font/opentype                     "access plus 1 year"
-	ExpiresByType image/webp                        "access plus 1 year"
+  ExpiresByType application/x-shockwave-flash     "access plus 1 year"
+  ExpiresByType image/bmp                         "access plus 1 year"
+  ExpiresByType image/gif                         "access plus 1 year"
+  ExpiresByType image/jpeg                        "access plus 1 year"
+  ExpiresByType image/png                         "access plus 1 year"
+  ExpiresByType image/svg+xml                     "access plus 1 year"
+  ExpiresByType image/tiff                        "access plus 1 year"
+  ExpiresByType image/vnd.microsoft.icon          "access plus 1 year"
+  ExpiresByType image/x-icon                      "access plus 1 year"
+  ExpiresByType text/css                          "access plus 1 year"
+  ExpiresByType video/x-flv                       "access plus 1 year"
+  ExpiresByType application/vnd.bw-fontobject     "access plus 1 year"
+  ExpiresByType application/x-font-ttf            "access plus 1 year"
+  ExpiresByType application/font-woff             "access plus 1 year"
+  ExpiresByType font/opentype                     "access plus 1 year"
+  ExpiresByType image/webp                        "access plus 1 year"
 
-	# The following MIME types are in the process of registration
-	ExpiresByType application/xslt+xml              "access plus 1 year"
-	ExpiresByType image/svg+xml                     "access plus 1 year"
+  # The following MIME types are in the process of registration
+  ExpiresByType application/xslt+xml              "access plus 1 year"
+  ExpiresByType image/svg+xml                     "access plus 1 year"
 
-	# The following MIME types are NOT registered
-	ExpiresByType application/mathml+xml            "access plus 1 year"
-	ExpiresByType application/rss+xml               "access plus 1 year"
+  # The following MIME types are NOT registered
+  ExpiresByType application/mathml+xml            "access plus 1 year"
+  ExpiresByType application/rss+xml               "access plus 1 year"
 
-	# JavaScript has various MIME types
-	ExpiresByType application/x-javascript          "access plus 1 year"
-	ExpiresByType application/javascript            "access plus 1 year"
-	ExpiresByType text/ecmascript                   "access plus 1 year"
-	ExpiresByType text/javascript                   "access plus 1 year"
+  # JavaScript has various MIME types
+  ExpiresByType application/x-javascript          "access plus 1 year"
+  ExpiresByType application/javascript            "access plus 1 year"
+  ExpiresByType text/ecmascript                   "access plus 1 year"
+  ExpiresByType text/javascript                   "access plus 1 year"
 </IfModule>
 
 <IfModule mod_deflate.c>
-	AddOutputFilter DEFLATE application/atom+xml
-	AddOutputFilter DEFLATE application/json
-	AddOutputFilter DEFLATE application/xhtml+xml
-	AddOutputFilter DEFLATE application/xml
-	AddOutputFilter DEFLATE text/css
-	AddOutputFilter DEFLATE text/html
-	AddOutputFilter DEFLATE text/plain
-	AddOutputFilter DEFLATE text/x-component
-	AddOutputFilter DEFLATE text/xml
+  AddOutputFilter DEFLATE application/atom+xml
+  AddOutputFilter DEFLATE application/json
+  AddOutputFilter DEFLATE application/xhtml+xml
+  AddOutputFilter DEFLATE application/xml
+  AddOutputFilter DEFLATE text/css
+  AddOutputFilter DEFLATE text/html
+  AddOutputFilter DEFLATE text/plain
+  AddOutputFilter DEFLATE text/x-component
+  AddOutputFilter DEFLATE text/xml
 
-	# The following MIME types are in the process of registration
-	AddOutputFilter DEFLATE application/xslt+xml
-	AddOutputFilter DEFLATE image/svg+xml
+  # The following MIME types are in the process of registration
+  AddOutputFilter DEFLATE application/xslt+xml
+  AddOutputFilter DEFLATE image/svg+xml
 
-	# The following MIME types are NOT registered
-	AddOutputFilter DEFLATE application/mathml+xml
-	AddOutputFilter DEFLATE application/rss+xml
+  # The following MIME types are NOT registered
+  AddOutputFilter DEFLATE application/mathml+xml
+  AddOutputFilter DEFLATE application/rss+xml
 
-	# JavaScript has various MIME types
-	AddOutputFilter DEFLATE application/javascript
-	AddOutputFilter DEFLATE application/x-javascript
-	AddOutputFilter DEFLATE text/ecmascript
-	AddOutputFilter DEFLATE text/javascript
+  # JavaScript has various MIME types
+  AddOutputFilter DEFLATE application/javascript
+  AddOutputFilter DEFLATE application/x-javascript
+  AddOutputFilter DEFLATE text/ecmascript
+  AddOutputFilter DEFLATE text/javascript
 
-	# .ico files and other compressible images
-	AddOutputFilter DEFLATE image/vnd.microsoft.icon
-	AddOutputFilter DEFLATE image/x-icon
-	AddOutputFilter DEFLATE image/bmp
-	AddOutputFilter DEFLATE image/tiff
-	AddOutputFilter DEFLATE application/pdf
+  # .ico files and other compressible images
+  AddOutputFilter DEFLATE image/vnd.microsoft.icon
+  AddOutputFilter DEFLATE image/x-icon
+  AddOutputFilter DEFLATE image/bmp
+  AddOutputFilter DEFLATE image/tiff
+  AddOutputFilter DEFLATE application/pdf
 
-	# compressible fonts (.woff is already compressed)
-	AddOutputFilter DEFLATE font/opentype
-	AddOutputFilter DEFLATE application/x-font-ttf
-	AddOutputFilter DEFLATE application/vnd.ms-fontobject
+  # compressible fonts (.woff is already compressed)
+  AddOutputFilter DEFLATE font/opentype
+  AddOutputFilter DEFLATE application/x-font-ttf
+  AddOutputFilter DEFLATE application/vnd.ms-fontobject
 </IfModule>
 
 
 <IfModule mod_headers.c>
-	Header unset ETag
+  Header unset ETag
 
-	<FilesMatch ".(ico|pdf|flv|jpg|jpeg|png|gif|js|css)$">
-		Header unset Last-Modified
-	</FilesMatch>
+  <FilesMatch ".(ico|pdf|flv|jpg|jpeg|png|gif|js|css)$">
+    Header unset Last-Modified
+  </FilesMatch>
 
-	<FilesMatch "\.(js|css|xml|gz)$">
-		# see http://blog.netdna.com/opensource/bootstrapcdn/accept-encoding-its-vary-important/
-		Header append Vary: Accept-Encoding
-	</FilesMatch>
+  <FilesMatch "\.(js|css|xml|gz)$">
+    # see http://blog.netdna.com/opensource/bootstrapcdn/accept-encoding-its-vary-important/
+    Header append Vary: Accept-Encoding
+  </FilesMatch>
 
-	<FilesMatch ".(ico|pdf|flv|jpg|jpeg|png|gif|js|css|swf)$">
-		Header set Cache-Control "max-age=31536000, public"
-	</FilesMatch>
+  <FilesMatch ".(ico|pdf|flv|jpg|jpeg|png|gif|js|css|swf)$">
+    Header set Cache-Control "max-age=31536000, public"
+  </FilesMatch>
 
-	<FilesMatch ".(html|htm)$">
-		Header set Cache-Control "max-age=3600, must-revalidate"
-	</FilesMatch>
+  <FilesMatch ".(html|htm)$">
+    Header set Cache-Control "max-age=3600, must-revalidate"
+  </FilesMatch>
 </IfModule>
